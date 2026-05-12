@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="assets/css/style.css">
+<body>
+    <h1>Exemplos document.getElementById</h1>
+    <h2>Exemplo Pessoa</h2>
+    <div>
+        <div>
+            <label for="cliente">Cliente</label>
+            <input type="text" id="cliente">
+        </div>
+        <div>
+            <label for="quantidade-licencas">Quantidade de Licenças</label>
+            <input type="range" id="quantidade-licencas" min="1" max="50">
+        </div>
+        <div>
+            <span>Tipo</span>
+                <div>
+                    <input type="radio" id="tipo-erp" name="tipo" value="ERP">
+                    <label for="tipo-erp">ERP</label>
+                </div>
+                <div>
+                    <input type="radio" id="tipo-hospital" name="tipo" value="Hospital">
+                    <label for="tipo-hospital">Hospital</label>
+                </div>
+                <div>
+                    <input type="radio" id="tipo-oficina" name="tipo" value="Oficina">
+                    <label for="tipo-oficina">Oficina</label>
+                <div>
+                    <input type="radio" id="tipo-restaurante" name="tipo" value="Restaurante">
+                    <label for="tipo-restaurante">Restaurante</label>
+                </div>
+        </div>
+    </div>
+    <div>
+        <label type="plano">Plano</label>
+        <select id="plano">
+            <option selected disabled>Selecione um plano</option>
+            <option value="Básico">Básico</option>
+            <option value="Intermediário">Intermediário</option>
+            <option value="Avançado">Avançado</option>
+        </select>
+    </div>
+    <div>
+        <label for="data-encerramento">Data de encerramento de contrato</label>
+        <input type="date" id="data-encerramento" min="2026-05-11">
+    </div>
+    <div>
+        <input type="checkbox" id="backup">
+        <label for="backup">Backup</label>
+    </div>
+    <div>
+        <button onclick="processarPedido()">Processar pedido</button>
+    </div>
+    <div>
+        <label for="resultado">Resultado</label>
+        <textarea id="resultado" disabled readonly></textarea>
+    </div>
+    
+    <!--
+    check > 
+    select > Planos
+    checkbox > 
+    date > Data de encerramento de contrato
+    textarea > Colocar resultado de todos os cálculos
+    -->
+    <script src="assets/js/exemplo01-seletores.js"></script>
+</body>
+</html>
