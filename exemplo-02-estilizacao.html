@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/exemplo-02-estilizacao.css">
+</head>
+<body>
+    <button onclick="alternarVisibilidadeBotao()" id="botao-alternar-visibilidade">Apresentar</button>
+    <button onclick="redefinirCor()">Redefinir cor</button>
+    <button onclick="mudarVermelho()">Mudar cor para vermelho</button>
+    <button onclick="mudarAzul()">Mudar cor para azul</button>
+    <div id="caixa-01" class="caixa-vermelha">A</div>
+    <div>
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+        </div>
+        <input type="radio" id="campo-tipo-pf" name="campo-tipo" value="PF" onchange="apresentarCampoPessoaFisica()">
+        <label id="campo-tipo-pf">Pessoa Física</label>
+        <input type="radio" id="campo-tipo-pj" name="campo-tipo" value="PJ" onchange="apresentarCampoPessoaJuridica()">
+        <label id="campo-tipo-pj">Pessoa Jurídica</label>
+        <!-- Visibility: hidden não elimina-->
+        <div id="campo-pf" class="hidden">
+            <label for="campo-cpf">CPF</label>
+            <input type="text" id="campo-cpf">
+        </div>
+        <div id="campo-pj" class="hidden">
+            <label for="campo-cnpj">CNPJ</label>
+            <input type="text" id="campo-cnpj">
+        </div>
+    </div>
+    <h1>Digitar para apresentar um gif</h1>
+    <div>
+        <label for="campo-pesquisa">Pesquisa</label>
+        <input type="text" id="campo-pesquisa" onkeyup="alterarImagem(event)">
+    </div>
+    <script src="assets/js/exemplo-02-estilizacao.js"></script>
+</body>
