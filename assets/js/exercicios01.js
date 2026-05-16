@@ -30,4 +30,5 @@ function confirmarContato(){
     campoResultado.value = (`Nome do Colaborador: ${colaborador}
 Tipo de contato: ${contato}
 Contato: ${contatos}`)
+    contatos = "";
 }
