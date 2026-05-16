@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/exercicio.css">
+    <title>Product</title>
 </head>
 <body>
-    <div>
-        <label for="numero01">Número 1</label>
-        <input type="number" id="numero01" min="0">
-        <label for="numero02">Número 2</label>
-        <input type="number" id="numero02" min="0">
-        <button onclick="compararNumeros()">Comparar</button>
+    <h1>Contatos</h1>
+    <div id="caixa-contato">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome">
+        </div>
+            <input type="radio" id="campo-comercial" name="campo-tipo" value="Comercial" onchange="mostrarInputComercial()">
+            <label for="campo-comercial">Conta comercial</label>
+            <input type="radio" id="campo-pessoal" name="campo-tipo" value="Pessoal" onchange="mostrarInputPessoal()">
+            <label for="campo-pessoal">Conta pessoal</label>
+        <div id="campo-contato-comercial" class="hidden">
+            <label for="contato-comercial">Digite seu número comercial</label>
+            <input type="text" id="contato-comercial">
+        </div>
+        <div id="campo-contato-pessoal" class="hidden">
+            <label for="contato-pessoal">Digite seu número pessoal</label>
+            <input type="text" id="contato-pessoal">    
+        </div>
     </div>
+    <button onclick="confirmarContato()">Confirmar</button>
     <hr>
     <div>
-        <label for="nome1">Nome</label>
-        <input type="text" id="nome1">
-        <label for="idade1">Idade</label>
-        <input type="number" id="idade1" min="0">
-        <button onclick="exercicio02ClassificarIdade()">Verificar dados</button>
-    </div>
-    <hr>
-    <div>
-        <label for="nota1">Nota 1</label>
-        <input type="text" id="nota1">
-        <label for="nota2">Nota 2</label>
-        <input type="text" id="nota2">
-        <label for="nota3">Nota 3</label>
-        <input type="text" id="nota3">
-        <button onclick="exercicio03CalcularMediaEscolar()">Verificar notas</button>
-        <label for="mostrarNota">Média escolar</label>
-        <textarea id="mostrarNota" disabled readonly></textarea>
+        <label for="resultado"></label>
+        <textarea id="resultado" disabled readonly></textarea>
     </div>
     <script src="assets/js/exercicios01.js"></script>
 </body>

@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    background-color: rgb(189, 167, 152);
+}
+
+.hidden{
+    display: none;
+}
+
+#caixa-contato{
+    background-color: rgb(248, 220, 200);
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.292);
+}
+
+button{
+    margin-bottom: 15px;
+}
+
+textarea{
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+#contato-comercial{
+    background-color: rgb(255, 95, 95);
+    border-radius: 5px;
+}
+#contato-pessoal{
+    background-color: rgb(95, 183, 255);
+    border-radius: 5px;
+}
+#campo-contato-comercial{
+    color: white;
+    background-color: rgb(124, 47, 47);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+#campo-contato-pessoal{
+    color: white;
+    background-color: rgb(45, 89, 125);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
