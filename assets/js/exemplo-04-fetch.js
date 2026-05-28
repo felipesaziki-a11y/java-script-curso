@@ -1,11 +1,11 @@
 function cadastrarEmpresa() {
     // URL que será chamada do back-end
     // https://domínio/api/v1/empresa
-    const url = "https://api.franciscosensaulas.com/api/v1/empresa";
+    const url = "https://api.franciscosensaulas.com/api/v1/empresa/produtos";
     // request body
     const dados = {
-        nome: "Francisco LTDA",
-        cnpj: "19.783.660/0001-14"
+        nome: "ABC Ltda.",
+        cnpj: "18.192.375/0005-55"
     }
     // fetch é a função que permite fazer requisição do front para o back
     fetch(url, {
@@ -17,7 +17,7 @@ function cadastrarEmpresa() {
         body: JSON.stringify(dados) // converter de objeto(dicionário) para string
     })
         .then(response => response.json()) // convertendo de string para objeto
-        .then(dado => {
+        .then(produto => {
             // Aqui é quando deu certo
             alert("Empresa foi cadastrada com sucesso")
         })
