@@ -9,5 +9,6 @@
     "other": "off"
   },
   "editor.suggestOnTriggerCharacters": false,
-  "editor.inlineSuggest.enabled": false
+  "editor.inlineSuggest.enabled": false,
+  "workbench.editor.wrapTabs": true
 }
